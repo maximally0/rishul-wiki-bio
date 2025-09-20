@@ -57,6 +57,27 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Wikipedia-specific colors
+        wiki: {
+          link: "hsl(var(--wiki-link))",
+          "link-hover": "hsl(var(--wiki-link-hover))",
+          "link-visited": "hsl(var(--wiki-link-visited))",
+          border: "hsl(var(--wiki-border))",
+          "border-light": "hsl(var(--wiki-border-light))",
+          "infobox-bg": "hsl(var(--wiki-infobox-bg))",
+          "toc-bg": "hsl(var(--wiki-toc-bg))",
+          text: "hsl(var(--wiki-text))",
+          "text-muted": "hsl(var(--wiki-text-muted))",
+          "text-light": "hsl(var(--wiki-text-light))",
+        },
+      },
+      fontFamily: {
+        serif: ['Georgia', 'Times New Roman', 'serif'],
+        wiki: ['Georgia', 'Times New Roman', 'serif'],
+      },
+      maxWidth: {
+        'wiki-content': 'var(--wiki-content-width)',
+        'wiki-infobox': 'var(--wiki-infobox-width)',
       },
       borderRadius: {
         lg: "var(--radius)",
