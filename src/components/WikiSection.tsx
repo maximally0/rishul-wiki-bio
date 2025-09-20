@@ -1,11 +1,14 @@
+import { WikiEditButton } from "./WikiEditButton";
+
 interface WikiSectionProps {
   id: string;
   title: string;
   level?: 1 | 2 | 3;
   children: React.ReactNode;
+  showEdit?: boolean;
 }
 
-export function WikiSection({ id, title, level = 2, children }: WikiSectionProps) {
+export function WikiSection({ id, title, level = 2, children, showEdit = true }: WikiSectionProps) {
   const HeadingTag = `h${level}` as keyof JSX.IntrinsicElements;
   
   const getHeadingClass = () => {
@@ -25,6 +28,7 @@ export function WikiSection({ id, title, level = 2, children }: WikiSectionProps
     <section id={id} className="mb-6">
       <HeadingTag className={getHeadingClass()}>
         {title}
+        {showEdit && <WikiEditButton sectionTitle={title} />}
       </HeadingTag>
       <div className="text-sm leading-relaxed">
         {children}

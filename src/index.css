@@ -8,29 +8,38 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Wikipedia color scheme */
+    /* Authentic Wikipedia color scheme */
     --background: 0 0% 100%;
     --foreground: 0 0% 0%;
     
-    /* Wikipedia blue for links */
+    /* Wikipedia navigation colors */
+    --wiki-nav-bg: 220 13% 91%;
+    --wiki-nav-border: 220 13% 82%;
+    --wiki-sidebar-bg: 0 0% 98%;
+    
+    /* Wikipedia blue for links - exact hex #0645ad */
     --wiki-link: 215 92% 33%;
     --wiki-link-hover: 215 92% 25%;
     --wiki-link-visited: 270 44% 44%;
+    --wiki-link-new: 0 100% 50%;
     
     /* Borders and subtle elements */
     --wiki-border: 0 0% 80%;
     --wiki-border-light: 0 0% 90%;
     --wiki-infobox-bg: 40 67% 96%;
     --wiki-toc-bg: 210 33% 96%;
+    --wiki-edit-bg: 60 100% 95%;
     
     /* Text colors */
     --wiki-text: 0 0% 0%;
     --wiki-text-muted: 0 0% 40%;
     --wiki-text-light: 0 0% 60%;
+    --wiki-text-small: 0 0% 50%;
     
-    /* Standard Wikipedia spacing */
-    --wiki-content-width: 960px;
-    --wiki-infobox-width: 300px;
+    /* Wikipedia-specific measurements */
+    --wiki-sidebar-width: 176px;
+    --wiki-content-padding: 12px;
+    --wiki-line-height: 1.6;
     
     /* Legacy variables for compatibility */
     --primary: 215 92% 33%;
